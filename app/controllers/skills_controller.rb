@@ -3,6 +3,7 @@ class SkillsController < ApplicationController
     end
 
     def new
+    
     end
 
     def create
