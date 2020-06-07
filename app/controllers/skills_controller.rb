@@ -1,11 +1,11 @@
 class SkillsController < ApplicationController
     before_action :set_skill, only: [:edit, :update, :show, :destroy]
     def index
-        
+        @skills = Skill.paginate(page: params[:page], per_page: 5)
     end
 
     def new
-     @skill = Skill.new
+      @skill = Skill.new
     end
 
     def create
