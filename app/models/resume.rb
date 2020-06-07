@@ -1,2 +1,3 @@
 class Resume < ApplicationRecord
+    
 end
