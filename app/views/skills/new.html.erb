@@ -1,6 +1,12 @@
 <h1>All new skill, for the bills</h1>
 
-<%= form_for @skills do |f| %>
+<%= form_for @skill, :html => {:class => 'form-group'} do |f| %>
   <%= f.label :skill %>
+  <%= f.text_field :skill %>
+  
+  <%= f.label :show %>
+  <%= f.check_box :show %>
+
+  <%= f.submit :submit %>
 
 <% end %>
