@@ -1,6 +1,7 @@
 class SkillsController < ApplicationController
     before_action :set_skill, only: [:edit, :update, :show, :destroy]
     def index
+        
     end
 
     def new
