@@ -7,11 +7,11 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :skills
       resources :experiences
-      resources :educations
+      resources :education
     end
   end
 
   resources :skills
-  resources :experiences
-  resources :educations
+  resources :experience, :controller => 'experiences'
+  resources :education, :controller => 'educations'
 end

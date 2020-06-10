@@ -2,6 +2,7 @@ class EducationsController < ApplicationController
     before_action :set_education, only: [:edit, :update, :show, :destroy]
     
     def index
+        educations = Education.paginate(page: params[:page], per_page: 20)
     end
     def show
 
