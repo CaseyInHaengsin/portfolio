@@ -1,9 +1,19 @@
+<div class="container-fluid">
 <% obj.each do |experience| %>
     <div class="row">
         <div class="col-xs-8 col-xs-offset-2">
             <div class="well well-lg">
-                <div>
-                    <%= link_to experience.title, experience_path(experience) %>
+                <div class="row">
+                    <div class="col-xl-12">
+                    
+                       <h5> <%= experience.title %></h5>
+                       <div class="col-sm">
+                            <%= experience.work_period %>
+                       </div>
+                       <div class="col-sm-6">
+                        <%= experience.description %>
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>
