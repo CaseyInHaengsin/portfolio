@@ -1,6 +1,10 @@
 <h1>Hello</h1>
 <div class="container">
     <h1>Experience</h1>
+    <%= render 'experience', obj: @experiences %>
+    <div align="center">
+        <%= will_paginate @experiences %>
+    </div>
 </div>
 <hr>
 <div class="container">
