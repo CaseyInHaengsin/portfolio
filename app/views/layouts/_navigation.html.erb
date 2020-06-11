@@ -7,7 +7,7 @@
     <div class="navbar-nav">
       <%= link_to 'Experience Page', experiences_path, class: "nav-item nav-link"%>
       <%= link_to "Skills", skills_path, class: "nav-item nav-link" %>
-      <a class="nav-item nav-link" href="#">Education</a>
+      <%= link_to 'Education', educations_path, class: "nav-item nav-link" %>
       <% if user_signed_in? %>
         <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "nav-item nav-link" %>
       <% end %>
