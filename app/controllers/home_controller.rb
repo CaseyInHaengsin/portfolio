@@ -2,8 +2,10 @@ class HomeController < ApplicationController
     #skip_before_action :authenticate_user!  
     def index
         @experiences = Experience.where(show: true).limit(10)
-        #@experiences = Experience.all.where(show: true)
+        
         @educations = Education.where(show: true).limit(10)
+        
+        @skills = Skill.where(show: true).limit(13)
     end
 
     def create
