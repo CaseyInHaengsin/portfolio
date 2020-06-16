@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     def index
         @experiences = Experience.where(show: true).limit(10)
         
-        @educations = Education.where(show: true).limit(10)
+        @educations = Education.where(show: true).limit(3)
         
         @skills = Skill.where(show: true).limit(13)
     end
