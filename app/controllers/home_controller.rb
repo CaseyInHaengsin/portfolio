@@ -6,6 +6,7 @@ class HomeController < ApplicationController
         @educations = Education.where(show: true).limit(3)
         
         @skills = Skill.where(show: true).limit(13)
+        @projects = Project.where(show: true).limit(4)
     end
 
     def create
