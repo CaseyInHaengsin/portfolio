@@ -20,6 +20,18 @@ class SkillsController < ApplicationController
     def show
     
     end
+    
+    def edit
+        if @skill.update(skill_params)
+            redirect_to @skill
+        else
+            render 'edit'
+        end
+    end
+    
+    def update
+        
+    end
 
     private
     def skill_params

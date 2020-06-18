@@ -1,0 +1,15 @@
+<h1>All new skill, for the bills</h1>
+
+<%= form_for @skill do |f| %>
+  <div class="form-group">
+    <%= f.label :skill %>
+    <%= f.text_field :skill, class: "form-control" %>
+  </div>
+  <div class="form-group form-check">
+    <%= f.label :show, class: "form-check-label" %>
+    <%= f.check_box :show %>
+  </div>
+
+  <%= f.submit :submit, class: "btn btn-dark" %>
+
+<% end %>

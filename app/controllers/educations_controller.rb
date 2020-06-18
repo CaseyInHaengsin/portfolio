@@ -12,6 +12,18 @@ class EducationsController < ApplicationController
         @education = Education.new
     end
 
+    def edit
+    end
+
+    def update
+        if @education.update(education_params)
+            redirect_to @education
+        else
+            render 'edit'
+        else
+    end
+
+
     def create
         @education = Education.new(education_params)
         if @education.save

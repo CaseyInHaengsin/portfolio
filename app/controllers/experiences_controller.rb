@@ -17,6 +17,17 @@ class ExperiencesController < ApplicationController
         end
     end
 
+    def edit
+    end
+
+    def update
+        if @experience.update(experience_params)
+            redirect_to @experience
+        else
+            render 'edit'
+        end
+    end
+
     private
     def experience_params
         params.require(:experience).permit(:title, :description, :work_period, :show)
