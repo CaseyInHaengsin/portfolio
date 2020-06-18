@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
     before_action :set_project, only: [:edit, :update, :show, :destroy]
     def index
+      @projects = Project.paginate(page: params[:page], per_page: 20)
     end
     def new
         @project = Project.new
