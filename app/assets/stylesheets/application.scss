@@ -15,8 +15,18 @@
  *= require_tree .
  *= require_self
  */
-.experience-header {
+.education-home {
+   text-align: center;
    
+}
+
+.education-item {
+   text-align: center;
+   margin-top: 2.5em;
+   
+}
+ .experience-header {
+   min-height: 2em;
    text-align: center;
 }
  .skills-container { 

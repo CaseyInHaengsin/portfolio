@@ -1,11 +1,5 @@
-<% obj.each do |skill| %>
-    <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
-            <div class="well well-lg">
-                <div>
-                    <%= link_to skill.skill, skill_path(skill) %>
-                </div>
-            </div>
-        </div>
-    </div>
+<ul class="list-group row">
+    <% obj.each do |skill| %>
+      <li class="list-group-item col-xs-6"><%= skill.skill %></li>
     <% end %>
+</ul>
