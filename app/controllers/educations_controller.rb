@@ -20,7 +20,7 @@ class EducationsController < ApplicationController
             redirect_to @education
         else
             render 'edit'
-        else
+        end
     end
 
 
