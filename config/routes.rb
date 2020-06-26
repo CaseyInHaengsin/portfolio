@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       resources :projects
     end
   end
-
+  get 'education', to: 'educations#index'
   resources :skills
   resources :experiences
   resources :educations
