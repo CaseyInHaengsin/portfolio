@@ -39,6 +39,6 @@ class SkillsController < ApplicationController
     end
     
     def set_skill
-        @skill = Skill.find(params[:id])
+        @skill = Skill.friendly.find(params[:id])
     end
 end

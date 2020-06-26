@@ -34,6 +34,6 @@ class ExperiencesController < ApplicationController
     end
     
     def set_experience
-        @experience = Experience.find(params[:id])
+        @experience = Experience.friendly.find(params[:id])
     end
 end
